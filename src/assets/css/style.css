@@ -1,0 +1,125 @@
+@import url(fontawesome-all.min.css);
+@import url("https://dl.spnr.de/cors/fonts/raleway/style.css");
+@import url("https://dl.spnr.de/cors/fonts/source-sans-pro/style.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: #282828;
+}
+
+hr {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.125);
+}
+
+/* yoinked these link-colors from darkreader */
+a {
+    color: rgb(125, 187, 247);
+}
+
+a:visited {
+    color: rgb(190, 125, 248);
+}
+
+/* HEADER */
+header {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header p {
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+/* SECTIONs */
+ section {
+     margin-top: 3rem;
+ }
+
+section > ul {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+section > p {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* just to add a little space between list-entry so that it does not look so squished together */
+section ul li {
+    margin-top: 0.1rem;
+}
+
+/* FOOTER */
+
+.footer {
+    margin: 4rem 0 2rem 0;
+    padding: 2rem 0 0 0;
+}
+
+.footer-list {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.footer-list li {
+    border-left: solid 2px rgba(255, 255, 255, 0.125);
+    display: inline-block;
+    line-height: 1;
+    margin-left: 1rem;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+/* the first item should not have such a sperator */
+.footer-list li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* ICONs */
+/* needed for this type of fontawesome approach */
+
+.icon {
+    /* so that the text does not is directly next to the icon */
+    margin-right: 0.3rem;
+    list-style: none;
+}
+
+.icon.solid:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+

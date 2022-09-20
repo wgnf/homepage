@@ -73,7 +73,7 @@ section > p {
 }
 
 /* just to add a little space between list-entry so that it does not look so squished together */
-section ul li {
+section li {
     margin-top: 0.1rem;
 }
 

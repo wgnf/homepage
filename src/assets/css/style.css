@@ -34,6 +34,17 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 /* yoinked these link-colors from darkreader */
 a {
     color: #7dbbf7;
@@ -41,6 +52,11 @@ a {
 
 a:visited {
     color: #7dbbf7;
+}
+
+/* just to add a little space between list-entry so that it does not look so squished together */
+li {
+    margin-top: 0.1rem;
 }
 
 /* breakpoint for mobile */
@@ -56,6 +72,10 @@ a:visited {
 
     h2 {
         font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -100,11 +120,6 @@ section > ul {
 section > p {
     margin-top: 1rem;
     margin-left: 1rem;
-}
-
-/* just to add a little space between list-entry so that it does not look so squished together */
-section li {
-    margin-top: 0.1rem;
 }
 
 /* FOOTER */

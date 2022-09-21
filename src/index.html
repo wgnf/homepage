@@ -57,6 +57,9 @@
                 <li><a href="https://github.com/moq/moq" target="_blank">Moq</a></li>
                 <li><a href="https://www.mvvmcross.com/" target="_blank">MvvmCross</a></li>
                 <li><a href="https://caliburnmicro.com/" target="_blank">Caliburn.Micro</a></li>
+                <li><a href="https://cakebuild.net/" target="_blank">Cake</a></li>
+                <li><a href="https://nuke.build/" target="_blank">NUKE</a></li>
+                <li><a href="https://about.gitlab.com/" target="_blank">GitLab</a></li>
             </ul>
         </section>
 
@@ -70,6 +73,114 @@
                 <li><a href="https://angular.io/" target="_blank">Angular</a></li>
             </ul>
         </section>
+
+        <section>
+            <h2>My (personal) Projects</h2>
+
+            <section>
+                <h3>liz (ˈlɪz)</h3>
+                <p>
+                    "liz" is a license-extraction and -validation tool for your .NET project or solution.
+                </p>
+                <p>
+                    Because I had trouble with tools like that before I wanted to implement something like this myself using all the .NET Tools that
+                    are available so that the process is as correct as it gets. I also managed to choose a software-design which enables me to extend
+                    the tool easier in the future.
+                </p>
+                <p>
+                    For easier usage in a build-process I designed the tool in a way that it is easy to use for third-party tools. I currently support
+                    <a href="https://cakebuild.net/" target="_blank">Cake</a> and <a href="https://nuke.build/" target="_blank">NUKE</a>.
+                </p>
+
+                <h4>Links</h4>
+                <ul>
+                    <li class="icon brands fa-github">
+                        <a href="https://github.com/wgnf/liz" target="_blank">GitHub</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/Liz.Tool/" target="_blank">NuGet.org - Liz.Tool</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/Cake.ExtractLicenses/" target="_blank">NuGet.org - Cake.ExtractLicenses</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/Liz.Nuke/" target="_blank">NuGet.org - Liz.Nuke</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>ArrangeContext</h3>
+                <p>
+                    A simple Testing-Tool for .NET to automatically initialize your system-under-test with mocked instances, inspired
+                    by tools like <a href="https://github.com/awesome-inc/NEdifis" target="_blank">NEdifis</a> and <a href="https://github.com/AutoFixture/AutoFixture" target="_blank">AutoFixture</a>.
+                </p>
+                <p>
+                    I chose an approach which would enable me (and other developers) to simply support multiple mocking-frameworks using this package.
+                </p>
+                
+                <h4>Links</h4>
+                <ul>
+                    <li class="icon brands fa-github">
+                        <a href="https://github.com/wgnf/ArrangeContext" target="_blank">GitHub</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/ArrangeContext.Moq/" target="_blank">NuGet.org - ArrangeContext.Moq</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/ArrangeContext.NSubstitute/" target="_blank">NuGet.org - ArrangeContext.NSubstitute</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/ArrangeContext.RhinoMocks/" target="_blank">NuGet.org - ArrangeContext.RhinoMocks</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/ArrangeContext.FakeItEasy/" target="_blank">NuGet.org - ArrangeContext.FakeItEasy</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>CsvProc9000</h3>
+                <p>
+                    A light-weight, rule-based CSV-Processor. The processor watches a configured inbox-directory for you and processes (based on the given rules)
+                    any new CSV-file that it catches and outputs the processed one anywhere you want.
+                </p>
+                <p>
+                    This was done for a friend of a friend of mine who needed to connect two services to one another.
+                </p>
+
+                <h4>Links</h4>
+                <ul>
+                    <li class="icon brands fa-github">
+                        <a href="https://github.com/OptiSchmopti/CsvProc9000" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3>SlnParser</h3>
+                <p>
+                    A relatively simple .NET solution-file parser to provide information that might be important when analyzing a solution.
+                    Because it targets <code>netstandard2.0</code> it can be basically used anywhere you want.
+                </p>
+                <p>
+                    This little package was needed i.e. to be able to parse the solution which is given to <strong>liz</strong> for analysis,
+                    because I need every project in the solution (and have to make decisions based on the type of project).
+                </p>
+
+                <h4>Links</h4>
+                <ul>
+                    <li class="icon brands fa-github">
+                        <a href="https://github.com/wgnf/SlnParser" target="_blank">SlnParser</a>
+                    </li>
+                    <li class="icon solid fa-box">
+                        <a href="https://www.nuget.org/packages/SlnParser/" target="_blank">NuGet.org</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
         <section>
             <h2>Ways to contact me</h2>
             <ul>

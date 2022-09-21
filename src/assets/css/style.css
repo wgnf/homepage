@@ -40,7 +40,13 @@ h2 {
 }
 
 h3 {
-    margin-top: 1.3rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -153,7 +159,7 @@ footer > ul > li:first-child {
 /* needed for this type of fontawesome approach */
 .icon {
     /* so that the text does not is directly next to the icon */
-    margin-right: 0.3rem;
+    margin-right: 1rem;
     list-style: none;
 }
 

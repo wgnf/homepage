@@ -172,3 +172,7 @@ footer > ul > li:first-child {
     font-family: 'Font Awesome 5 Brands';
 }
 
+/* seal */
+.seal {
+    margin-top: 2rem;
+}

@@ -1,0 +1,202 @@
+@import url(fontawesome-all.min.css);
+@import url("https://dl.spnr.de/cors/fonts/raleway/style.css");
+@import url("https://dl.spnr.de/cors/fonts/source-sans-pro/style.css");
+
+:root {
+    --main-border-color: rgba(255, 255, 255, 0.125);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 20px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 15px;
+
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: #282828;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* yoinked these link-colors from darkreader */
+a {
+    color: #7dbbf7;
+}
+
+a:visited {
+    color: #7dbbf7;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* just to add a little space between list-entry so that it does not look so squished together */
+li {
+    margin-top: 0.1rem;
+}
+
+/* breakpoint for mobile */
+@media screen and (max-width: 960px ) {
+    html,
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ICONs */
+/* needed for this type of fontawesome approach */
+.icon {
+    /* so that the text does not is directly next to the icon */
+    margin-right: 1rem;
+    list-style: none;
+}
+
+.icon.solid:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+/* seal */
+.seal {
+    margin-top: 2rem;
+}
+
+#confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.start {
+    text-align: center;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.kiss-animation {
+    display: flex;
+    margin: 0 auto 2rem;
+    width: 50%;
+    position: relative;
+}
+
+.kiss-animation > img {
+    width: 50%;
+    flex-grow: 0;
+    height: auto;
+    display: block;
+}
+
+.heart-animation {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    top: 2.5rem;
+    transform: translateX(-50%);
+    color: darkred;
+    animation: heartFly 3s linear infinite;
+}
+
+#img1 {
+    margin-right: -.5rem;
+    animation: kiss1 3s linear infinite;
+}
+
+#img2 {
+    margin-left: -.5rem;
+    animation: kiss2 3s linear infinite;
+}
+
+@keyframes kiss1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes kiss2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes heartFly {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        transform: translate(-50%, -150%) scale(2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
